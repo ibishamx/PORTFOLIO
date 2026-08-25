@@ -1,0 +1,6 @@
+{
+  "name": "Dev & Growth Portfolio Studio",
+  "description": "A modern, customizable portfolio web application and headless content management system for freelance developers, e-commerce specialists, AI vibe coders, and digital marketers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
