@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect, ReactNode, useCa
 import { PortfolioData } from '../types/portfolio';
 import { initialPortfolioData } from '../data/portfolio';
 
-const STORAGE_KEY = 'portfolio_cms_data_v1';
+const STORAGE_KEY = 'portfolio_cms_data_v3';
 const THEME_KEY = 'portfolio_theme_pref';
 
 interface ToastState {
@@ -59,18 +59,8 @@ export const PortfolioProvider: React.FC<{ children: ReactNode }> = ({ children 
     return initialPortfolioData;
   });
 
-  // Dark/Light Theme state
-  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-    try {
-      const storedTheme = localStorage.getItem(THEME_KEY);
-      if (storedTheme === 'dark' || storedTheme === 'light') {
-        return storedTheme;
-      }
-    } catch {
-      // ignore
-    }
-    return 'dark'; // Default to sophisticated dark theme
-  });
+  // Dark Theme (Fixed)
+  const [theme] = useState<'dark' | 'light'>('dark');
 
   // Admin CMS Edit Studio Mode with URL query/hash & shortcut detection
   const [isEditMode, setIsEditMode] = useState<boolean>(() => {
@@ -147,22 +137,12 @@ export const PortfolioProvider: React.FC<{ children: ReactNode }> = ({ children 
     }
   }, [data]);
 
-  // Sync theme with HTML root class & localStorage
+  // Set HTML root to dark mode
   useEffect(() => {
-    try {
-      localStorage.setItem(THEME_KEY, theme);
-    } catch {
-      // ignore
-    }
     const root = document.documentElement;
-    if (theme === 'dark') {
-      root.classList.add('dark');
-      root.classList.remove('light');
-    } else {
-      root.classList.remove('dark');
-      root.classList.add('light');
-    }
-  }, [theme]);
+    root.classList.add('dark');
+    root.classList.remove('light');
+  }, []);
 
   // Update dynamic document metadata & schema
   useEffect(() => {
@@ -209,12 +189,8 @@ export const PortfolioProvider: React.FC<{ children: ReactNode }> = ({ children 
   }, [data.seo, data.personal.name, data.contact, data.about.technologiesHighlight]);
 
   const toggleTheme = useCallback(() => {
-    setTheme((prev) => {
-      const next = prev === 'dark' ? 'light' : 'dark';
-      showToast(`Switched to ${next === 'dark' ? 'Dark' : 'Light'} Mode`, 'info');
-      return next;
-    });
-  }, [showToast]);
+    // Theme locked to dark
+  }, []);
 
   const toggleEditMode = useCallback(() => {
     setIsEditMode((prev) => {

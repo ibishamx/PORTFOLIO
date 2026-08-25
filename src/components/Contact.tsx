@@ -179,6 +179,30 @@ export const Contact: React.FC = () => {
                   <ArrowRight className="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform" />
                 </a>
 
+                {/* Website Link */}
+                {contact.website && (
+                  <a
+                    id="contact-website-direct-link"
+                    href={contact.website.startsWith('http') ? contact.website : `https://${contact.website}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:border-cyan-500/50 transition-all group"
+                  >
+                    <div className="w-11 h-11 rounded-xl bg-slate-800 text-cyan-400 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                      <Globe className="w-5 h-5" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Official Website
+                      </span>
+                      <span className="text-sm font-semibold text-slate-200 dark:text-slate-200 light:text-slate-900 truncate block">
+                        {contact.website}
+                      </span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                )}
+
                 {/* Location */}
                 <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-50 border border-slate-800 dark:border-slate-800 light:border-slate-200">
                   <div className="w-11 h-11 rounded-xl bg-slate-800 text-amber-400 flex items-center justify-center flex-shrink-0">

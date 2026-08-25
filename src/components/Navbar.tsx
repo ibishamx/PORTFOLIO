@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { usePortfolio } from '../context/PortfolioContext';
 import { getWhatsAppUrl, getPhoneUrl, getEmailUrl } from '../utils/contact';
 import { 
-  Sun, 
-  Moon, 
   Menu, 
   X, 
   Sparkles, 
@@ -14,7 +12,7 @@ import {
 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
-  const { data, theme, toggleTheme } = usePortfolio();
+  const { data } = usePortfolio();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -94,21 +92,6 @@ export const Navbar: React.FC = () => {
 
           {/* Right Action Utilities */}
           <div className="flex items-center gap-2.5">
-            {/* Dark / Light Mode Toggle */}
-            <button
-              id="theme-toggle-btn"
-              onClick={toggleTheme}
-              aria-label="Toggle Dark and Light Mode"
-              className="p-2 rounded-lg text-slate-300 dark:text-slate-300 light:text-slate-700 hover:text-white bg-slate-900/80 dark:bg-slate-900/80 light:bg-slate-100 border border-slate-800 dark:border-slate-800 light:border-slate-200 hover:bg-slate-800 transition-all"
-              title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
-            >
-              {theme === 'dark' ? (
-                <Sun className="w-4 h-4 text-amber-400 hover:rotate-45 transition-transform" />
-              ) : (
-                <Moon className="w-4 h-4 text-indigo-600 hover:-rotate-12 transition-transform" />
-              )}
-            </button>
-
             {/* Primary 'Hire Me' CTA */}
             <a
               id="navbar-hire-me-cta"

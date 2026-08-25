@@ -222,6 +222,17 @@ export const Footer: React.FC = () => {
                 <MapPin className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
                 <span>{contact.location}</span>
               </div>
+              {contact.website && (
+                <a 
+                  href={contact.website.startsWith('http') ? contact.website : `https://${contact.website}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 hover:text-cyan-400 transition-colors"
+                >
+                  <Globe className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
+                  <span>{contact.website}</span>
+                </a>
+              )}
               <a href={getPhoneUrl(contact.phone)} className="flex items-center gap-2 hover:text-cyan-400 transition-colors">
                 <Phone className="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" />
                 <span>{contact.phone}</span>

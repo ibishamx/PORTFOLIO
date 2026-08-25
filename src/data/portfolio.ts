@@ -18,13 +18,13 @@ export const initialPortfolioData: PortfolioData = {
   // 1. PERSONAL INFORMATION & BRANDING
   // ==========================================================================
   personal: {
-    name: "Muhammad Ibisham",
-    title: "Freelance Full-Stack Developer, E-Commerce Specialist & AI Solutions Builder",
-    badge: "Available for Freelance Projects",
-    heroHeadline: "I Build, Automate & Grow Digital Businesses.",
-    heroSubheadline: "Shopify • E-commerce • Web Development • AI Solutions • Business Automation • Meta & TikTok Ads",
-    intro: "Helping ambitious brands, startups, and business owners engineer high-converting e-commerce stores, custom web applications, rapid AI tools, and intelligent workflow automations.",
-    avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+    name: "Bisham Bashir",
+    title: "CEO, IBX Agency | E-Commerce Expert, Automation & AI Solutions Specialist",
+    badge: "CEO, IBX Agency — Available for Projects",
+    heroHeadline: "I Build, Automate & Grow E-Commerce & Digital Businesses.",
+    heroSubheadline: "E-Commerce Expert • Shopify • AI Solutions • Business Automation • Meta & TikTok Ads",
+    intro: "CEO at IBX Agency. Helping ambitious brands, e-commerce stores, and enterprise founders build high-converting storefronts, intelligent workflow automations, AI tools, and scalable growth engines.",
+    avatarUrl: "https://plus.unsplash.com/premium_vector-1741423989978-e35f01532dcf?q=80&w=722&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     yearsOfExperience: "5+ Years",
   },
 
@@ -33,18 +33,18 @@ export const initialPortfolioData: PortfolioData = {
   // All contact buttons, footer links, and forms read from this object.
   // ==========================================================================
   contact: {
-    phone: "YOUR PHONE",
-    whatsapp: "YOUR WHATSAPP",
-    email: "YOUR EMAIL",
+    phone: "+923191989656",
+    whatsapp: "+923191989656",
+    email: "HELP@IBX.COM.PK",
     location: "Faisalabad, Pakistan",
-    website: "YOUR WEBSITE",
-    instagram: "YOUR INSTAGRAM",
-    facebook: "YOUR FACEBOOK",
-    linkedin: "YOUR LINKEDIN",
-    github: "YOUR GITHUB",
-    tiktok: "YOUR TIKTOK",
+    website: "IBX.com.pk",
+    instagram: "",
+    facebook: "",
+    linkedin: "",
+    github: "",
+    tiktok: "",
     availabilityStatus: "available",
-    availabilityText: "Accepting New Client Projects & Retainers",
+    availabilityText: "CEO, IBX Agency — Accepting New Client Projects & Retainers",
     workingHours: "Mon - Sat: 9:00 AM - 10:00 PM (PKT / UTC+5)",
     responseRate: "Under 1 Hour Average Response Time",
   },
@@ -53,15 +53,15 @@ export const initialPortfolioData: PortfolioData = {
   // 3. ABOUT SECTION & BUSINESS OUTCOME STATS
   // ==========================================================================
   about: {
-    title: "Bridging Engineering, Automation & Growth Strategy",
-    subtitle: "Turning complex manual bottlenecks into seamless digital growth engines.",
+    title: "Bridging E-Commerce Engineering, Automation & Growth Strategy",
+    subtitle: "Turning complex bottlenecks into high-converting digital growth engines.",
     narrative: [
-      "I am a versatile technology partner for modern entrepreneurs and businesses. Rather than just writing lines of code, I focus directly on commercial outcomes: increasing conversion rates, eliminating hundreds of manual staff hours through automation, and building fast, resilient software.",
-      "My multidisciplinary background spans full-stack web development, enterprise Shopify architectures, rapid AI vibe coding/prototyping, custom internal ERPs, Google Sheets & Excel macros, and high-ROAS Meta and TikTok performance advertising campaigns."
+      "As the CEO of IBX Agency, I lead digital engineering and e-commerce growth strategies for ambitious brands, online stores, and founders. Rather than just writing code, our focus is directly on commercial outcomes: increasing conversion rates, cutting operational costs, eliminating manual bottlenecks through custom automation, and scaling profitable ad acquisition.",
+      "My background spans end-to-end Shopify architectures, custom e-commerce web applications, rapid AI vibe coding solutions, internal business ERPs, Google Sheets & Excel automations, and high-ROAS Meta and TikTok performance advertising campaigns."
     ],
     bulletPoints: [
       "End-to-end Shopify store architecture, theme customization, and custom Liquid development.",
-      "Full-stack web applications with React, TypeScript, Tailwind, and scalable backend APIs.",
+      "High-converting e-commerce web applications with React, TypeScript, and modern headless stacks.",
       "AI/Vibe coding workflows: rapid MVPs, AI chatbots, and custom workflow automations.",
       "Custom business software, Windows Desktop (C#/.NET/WPF), and Electron utilities.",
       "Automated logistics, courier API integrations, COD reconciliations, and inventory syncs.",
@@ -1664,13 +1664,13 @@ export const initialPortfolioData: PortfolioData = {
   // 13. SEO & SOCIAL METADATA
   // ==========================================================================
   seo: {
-    title: "Freelance Full-Stack Developer, E-Commerce & AI Specialist",
-    description: "Expert Shopify developer, full-stack engineer, AI vibe coder, and performance marketer. Building websites, custom business software, workflow automations, and scaling Meta/TikTok ads.",
-    keywords: "Shopify Developer, Full-Stack Developer, AI Vibe Coding, Business Automation, Google Sheets Automation, Meta Ads, TikTok Ads, React Developer, Courier API Integration, Freelancer Faisalabad",
-    ogTitle: "Muhammad Ibisham | Full-Stack Developer & AI Automation Specialist",
-    ogDescription: "I Build, Automate & Grow Digital Businesses. Shopify, Custom Web Apps, AI Solutions, Business Automation & Meta/TikTok Ads.",
-    ogImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80",
-    siteUrl: "https://ibisham-portfolio.vercel.app"
+    title: "Bisham Bashir | CEO, IBX Agency — E-Commerce Expert & AI Solutions",
+    description: "CEO at IBX Agency. E-Commerce Expert, Shopify Developer, AI Solutions Builder, and Performance Marketer. Scaling online storefronts, automations, and ad funnels.",
+    keywords: "E-Commerce Expert, IBX Agency, Bisham Bashir, Shopify Developer, AI Vibe Coding, Business Automation, Google Sheets Automation, Meta Ads, TikTok Ads, React Developer, Courier API Integration, Faisalabad",
+    ogTitle: "Bisham Bashir | CEO, IBX Agency — E-Commerce Expert",
+    ogDescription: "I Build, Automate & Grow E-Commerce & Digital Businesses. Shopify, Custom Web Apps, AI Solutions, Business Automation & Meta/TikTok Ads.",
+    ogImage: "https://plus.unsplash.com/premium_vector-1741423989978-e35f01532dcf?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0",
+    siteUrl: "https://ibx.com.pk"
   },
 
   // ==========================================================================

@@ -223,8 +223,8 @@ export const Hero: React.FC = () => {
                     <h3 className="text-xl font-bold text-white dark:text-white light:text-slate-900">
                       {personal.name}
                     </h3>
-                    <p className="text-xs text-cyan-400 font-medium mb-1">
-                      Full-Stack & Growth Architect
+                    <p className="text-xs text-cyan-400 font-semibold mb-1">
+                      CEO, IBX Agency • E-Commerce Expert
                     </p>
                     <div className="flex items-center gap-1.5 text-xs text-slate-400">
                       <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
